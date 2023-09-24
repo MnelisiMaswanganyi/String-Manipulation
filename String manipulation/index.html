@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>
+		Write a program that takes a string as input and prints the string without any whitespace
+	</title>
+</head>
+
+<body>
+	<h1 style="color: burlywood">
+		Mnelisi Maswanganyi
+	</h1>
+	<b>
+		How to remove spaces from
+		a string using JavaScript?
+	</b>
+	<p>
+		Original string is:
+		Mnelisi Maswanganyi Is 21 Years Old
+	</p>
+	<p>
+		New String is:
+		<span class="output"></span>
+	</p>
+	<button onclick="removeSpaces()">
+		Remove Spaces
+	</button>
+	<script>
+		function removeSpaces() {
+			originalText =
+				"Mnelisi Maswanganyi Is 21 Years Old";
+
+			newText =
+				originalText.replace(/ /g, "");
+
+			document.querySelector('.output').textContent
+				= newText;
+		}
+	</script>
+	
+</body>
+</html>
